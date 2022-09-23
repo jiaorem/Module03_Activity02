@@ -1,0 +1,81 @@
+/* type selector */
+body {
+  background-color: white;
+  margin: 0;
+  }
+
+h1{
+  color:black;
+}
+
+p {
+  color: rgb(70, 103, 146);
+}
+
+/* id selector */
+#page_title {
+  text-align: center;
+  color: rgb(42, 19, 143);
+}
+
+/* class selector */
+.center {
+  text-align: center;
+}
+
+/* pseudoclass */
+a:hover { 
+  color: #FF00FF;
+}
+
+/* descendent selector */
+hgroup h3 {
+  color: green;
+}
+
+section h1 {
+  font-size: 50;
+}
+
+/* attribute selector */
+footer[target=_footerbar]{
+  color: yellow;
+  background-color: darkblue;
+}
+
+/* multiple style rules */
+p[target=_copyright], ul li{
+  color: yellow;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: yellow;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+
+li a:hover:not(.active) {
+    background-color: yellowgreen;
+    color: whitesmoke;
+}
+
+li a.active {
+    background-color: cadetblue;
+    color: white;
+}
